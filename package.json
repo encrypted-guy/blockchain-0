@@ -1,0 +1,25 @@
+{
+  "name": "parc2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js && npm run start-redis",
+    "dev-peer": "cross-env GENERATE_PEER_PORT='true' nodemon index.js ",
+    "start-redis": "redis-server --daemonize yes"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hex-to-binary": "^1.0.1",
+    "redis": "^3.1.2",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
+}
